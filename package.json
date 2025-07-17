@@ -1,0 +1,37 @@
+{
+  "name": "go-seamless",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build && vite build --ssr",
+    "start:ssr": "node ./bootstrap/ssr/ssr.js",
+    "dev": "pnpm build && concurrently 'pnpm:dev:*'",
+    "dev:js:assets": "vite build --watch",
+    "dev:js:ssr": "vite build --ssr --watch",
+    "dev:ssr": "nodemon ./bootstrap/ssr/ssr.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.2",
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "concurrently": "^9.2.0",
+    "laravel-vite-plugin": "^2.0.0",
+    "nodemon": "^3.1.10",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.5",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "@inertiajs/react": "^2.0.15",
+    "preact": "^10.26.9",
+    "preact-iso": "^2.9.2",
+    "preact-render-to-string": "^6.5.13",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat"
+  }
+}

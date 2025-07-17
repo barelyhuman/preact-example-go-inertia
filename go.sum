@@ -1,0 +1,4 @@
+github.com/barelyhuman/go v0.2.2 h1:Lpk1XrlP40F3II8BibVzViZUOJ1GgDdzXUBb8ENwb0U=
+github.com/barelyhuman/go v0.2.2/go.mod h1:hox2iDYZAarjpS7jKQeYIi2F+qMA8KLMtCws++L2sSY=
+github.com/petaki/inertia-go v1.10.0 h1:t7hvMxZC4cutON0gYj9yvf8x2ORvI9erWBfJd6YafKE=
+github.com/petaki/inertia-go v1.10.0/go.mod h1:CkDNo5LCe3WwAiltMqB0hdV5SKrX2/rN3LkLAIgzBe4=
