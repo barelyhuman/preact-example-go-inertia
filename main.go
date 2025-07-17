@@ -73,7 +73,7 @@ func assetFunc(path string) string {
 	}
 
 	if entry, exists := manifest[path]; exists {
-		return entry.File
+		return "/" + entry.File
 	}
 
 	log.Printf("Asset not found for path: %s", path)
