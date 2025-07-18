@@ -3,7 +3,7 @@
 > [!NOTE]
 >
 > This is a starter example style repository. Basic knowledge of the tech used
-> in the stack is a pre-requesite.
+> in the stack is a pre-requisite.
 
 - [preact-example-go-inertia](#preact-example-go-inertia)
   - [Tech Stack](#tech-stack)
