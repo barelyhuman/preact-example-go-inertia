@@ -37,9 +37,6 @@ func main() {
 	mux.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("public/build/assets"))))
 
 	mux.Handle("/", inertiaManager.Middleware(http.HandlerFunc(homeHandler)))
-	mux.Handle("/demo", inertiaManager.Middleware(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		inertiaManager.Render(w, r, "Demo", nil)
-	})))
 
 	addr := fmt.Sprintf("%v:%v", host, port)
 
@@ -50,7 +47,10 @@ func main() {
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	err := inertiaManager.Render(w, r, "Home", nil)
-	fmt.Printf("err: %v\n", err)
+	if err != nil {
+		log.Printf("Failed to render in homeHandler with error:%v", err)
+		return
+	}
 }
 
 func assetFunc(path string) string {
