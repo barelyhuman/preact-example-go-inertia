@@ -1,6 +1,5 @@
 import { createInertiaApp } from "@inertiajs/react";
 import { h, hydrate } from "preact";
-// import "../css/app.css";
 
 createInertiaApp({
     resolve: (name) => {
