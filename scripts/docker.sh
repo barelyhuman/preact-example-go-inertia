@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pnpm start:ssr &
+pnpm start &
 
 app-server
 

@@ -97,7 +97,7 @@ here's the sequence of steps required to run everything in non-dev mode
 3. Copy the needed assets 
    1. The server binary (`server`)
    2. The nodejs and client deps (`package.json`, `bootstrap`, `public`)
-4. Run the SSR server `pnpm start:ssr` 
+4. Run the SSR server `pnpm start` 
 5. Run the go server `./server` 
 
 
